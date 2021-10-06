@@ -28,7 +28,6 @@ async def intro(ctx, *args):
    
    embed=discord.Embed(color=0xff2e2e)
    embed.add_field(name=args[0], value=msg, inline=False)
-   embed.set_footer(text="引用元：BBTAG Character Overview")
    await ctx.send(embed=embed)
     
 
