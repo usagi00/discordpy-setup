@@ -18,7 +18,7 @@ async def ping(ctx):
     
     
 @bot.command()
-async def おい非常食(ctx):
+async def (ctx):
     await ctx.send('だれが非常食だ')
 
 
