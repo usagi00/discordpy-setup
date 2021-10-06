@@ -34,20 +34,13 @@ AZ,アズラエル,18000,4A-6F,18,26,236C,24,ー,ー,2B,13,7~16,Point
 
 @bot.command()
 async def intro(ctx, *args):
-   if len(args) == 0:
-       await ctx.send('引数にキャラクターの名前を入力してください。')
-       return
    namepr = namelist.get(args[0])
-   if namepr == None:
-       await ctx.send('存在しないキャラクター、またはキャラクターの名前が間違っています。')
-       return
    msg = introlist.get(namepr)
    
    embed=discord.Embed(color=0xff2e2e)
    embed.add_field(name=args[0], value=msg, inline=False)
    embed.set_footer(text="引用元：BBTAG Character Overview")
    await ctx.send(embed=embed)
-
 
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
