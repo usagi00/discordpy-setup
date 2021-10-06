@@ -18,7 +18,7 @@ async def ping(ctx):
     
     
 @bot.command()
-async def (ctx):
+async def hijousyoku(ctx):
     await ctx.send('だれが非常食だ')
 
 
