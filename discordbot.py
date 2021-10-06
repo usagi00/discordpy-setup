@@ -22,10 +22,12 @@ async def neko(ctx):
     await ctx.send('にゃーん')
     
 
+@bot.command()
+async def wiki(ctx):
+   await ctx.send('日本語版Wiki：https://seesaawiki.jp/bbtag/')
+
+
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
 
 
-@bot.command()
-async def wiki(ctx):
-   await ctx.send('日本語版Wiki：https://seesaawiki.jp/bbtag/')
