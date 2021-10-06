@@ -19,7 +19,7 @@ async def ping(ctx):
     
 @bot.command()
 async def hijousyoku(ctx):
-    await ctx.send('だれが非常食だ')
+    await ctx.send('だれが非常食だ！')
 
 
 token = getenv('DISCORD_BOT_TOKEN')
