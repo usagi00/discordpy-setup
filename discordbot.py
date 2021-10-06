@@ -18,13 +18,8 @@ async def ping(ctx):
     
     
 @bot.command()
-async def neko(ctx):
-    await ctx.send('にゃーん')
-    
-
-@bot.command()
-async def wiki(ctx):
-   await ctx.send('日本語版Wiki：https://seesaawiki.jp/bbtag/')
+async def おい非常食(ctx):
+    await ctx.send('だれが非常食だ')
 
 
 token = getenv('DISCORD_BOT_TOKEN')
